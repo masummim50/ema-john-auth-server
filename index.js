@@ -42,12 +42,12 @@ client.connect(err => {
 });
 
 
-
+const homepage = `<a href="https://warm-tor-58630.herokuapp.com/products" target="_blank"><button>All products</button></a><br></br> <a href="https://warm-tor-58630.herokuapp.com/product/B00I8BIBCW" target="_blank"><button>Product by keys</button></a>`
 
 
 
 app.get('/', (req, res)=> {
-  res.send('server running')
+  res.send(homepage)
 })
 
 
